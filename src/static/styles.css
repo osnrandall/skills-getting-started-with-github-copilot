@@ -74,6 +74,33 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* Participants list styling */
+.participants-list {
+  margin-top: 10px;
+  padding-left: 20px; /* keep the bullet indentation */
+  max-width: 100%;
+}
+
+.participants-list li {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: #eef2ff; /* soft highlight */
+  color: #0d47a1;
+  display: list-item; /* preserve bullets */
+  list-style-position: inside;
+  font-size: 14px;
+}
+
+/* When there are no participants, show subtle italic text without highlight */
+.participants-list li.no-participants {
+  background-color: transparent;
+  color: #666;
+  font-style: italic;
+  padding: 0;
+  margin-bottom: 0;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
